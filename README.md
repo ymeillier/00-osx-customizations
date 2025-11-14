@@ -1,6 +1,22 @@
 
+# Applications
+## iTerm2
 
+To replace OSX default terminal which does not support split panes but only tabs.
+
+```
+brew install --cask iterm2
+```
+
+
+| **Split Direction**  | **Menu Path**                                        | **Keyboard Shortcut**                                     |
+| -------------------- | ---------------------------------------------------- | --------------------------------------------------------- |
+| **Horizontal Split** | Shell > New Split Pane > **Split Pane Horizontally** | **Command** ($\text{⌘}$) + **D**                          |
+| **Vertical Split**   | Shell > New Split Pane > **Split Pane Vertically**   | **Command** ($\text{⌘}$) + **Shift** ($\text{⇧}$) + **D** |
+
+# zshrc
 This page shows the zshrc customization i use on my mac a number of workflow optimizations for obsidian, vscode, and github 
+
 
 # Current (10/14/2025)
 
