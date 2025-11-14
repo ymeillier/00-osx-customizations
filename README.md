@@ -14,6 +14,70 @@ brew install --cask iterm2
 | **Horizontal Split** | Shell > New Split Pane > **Split Pane Horizontally** | **Command** ($\text{⌘}$) + **D**                          |
 | **Vertical Split**   | Shell > New Split Pane > **Split Pane Vertically**   | **Command** ($\text{⌘}$) + **Shift** ($\text{⇧}$) + **D** |
 
+# git config
+
+```
+$ cat ~/.ssh/config
+Host github.com
+  Hostname github.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/github/id_github
+
+Host gitlab.com
+  Hostname gitlab.com
+  PreferredAuthentications publickey
+  IdentityFile /Users/meillier/.ssh/gitlab-meillier/keypair
+
+Host gitlab.com-meillier
+  #clone with: git@gitlab.com-meillier:meillier/<repo>
+  Hostname gitlab.com
+  User git
+  PreferredAuthentications publickey
+  IdentityFile /Users/meillier/.ssh/gitlabce-meillier/id_rsa
+  #make sure the git remote is set to use gitlab.com-meillier:
+  #git remote set-url origin git@gitlab.com-meillier:meillier/gke-optimization-appsscripts.git
+
+Host compute.pnet-clab-test3
+  HostName compute.pnet-clab-test3
+  IdentityFile /Users/meillier/.ssh/google_compute_engine
+  CheckHostIP no
+  HashKnownHosts no
+  HostKeyAlias compute.6985408927280535019
+  IdentitiesOnly yes
+  StrictHostKeyChecking yes
+  UserKnownHostsFile /Users/meillier/.ssh/google_compute_known_hosts
+  ProxyCommand /Users/meillier/.config/gcloud/virtenv/bin/python3 /Users/meillier/google-cloud-sdk/lib/gcloud.py compute start-iap-tunnel 'pnet-clab-test3' '%p' --listen-on-stdin --project eve-ng-368801 --zone=us-central1-a --verbosity=warning
+  ProxyUseFdpass no
+  User admin_meillier_altostrat_com
+
+
+Host compute.vdc-pnetlab-v5-2
+  HostName compute.vdc-pnetlab-v5-2
+  IdentityFile /Users/meillier/.ssh/google_compute_engine
+  CheckHostIP no
+  HashKnownHosts no
+  HostKeyAlias compute.4089153346698549902
+  IdentitiesOnly yes
+  StrictHostKeyChecking no
+  UserKnownHostsFile /Users/meillier/.ssh/google_compute_known_hosts
+  ProxyCommand /Users/meillier/.config/gcloud/virtenv/bin/python3 /Users/meillier/google-cloud-sdk/lib/gcloud.py compute start-iap-tunnel 'vdc-pnetlab-v5-2' '%p' --listen-on-stdin --project vdc-tf2 --zone=us-central1-a --verbosity=warning
+  ProxyUseFdpass no
+  User admin_meillier_altostrat_com
+meillier-macbookpro:.ssh meillier$
+```
+
+Test ssh authentication with 
+```
+ssh -T git@github.com
+```
+or
+
+```gh repo list --limit=100```
+
+
+![file-20251114103739184](./assets/README/file-20251114103739184.png)
+
+
 # zshrc
 This page shows the zshrc customization i use on my mac a number of workflow optimizations for obsidian, vscode, and github 
 

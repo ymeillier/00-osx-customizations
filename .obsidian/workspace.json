@@ -236,7 +236,9 @@
   "active": "5a1d087a26a559d4",
   "lastOpenFiles": [
     "README.md",
-    "README.md",
+    "assets/README/file-20251114103739184.png",
+    "assets/README",
+    "assets",
     "Template.md",
     "mindmap.xmind",
     "assets/README/file-20251111151734490.png",
@@ -250,8 +252,6 @@
     "assets/README/file-20251101110359833.png",
     "assets/README/file-20251031173706641.png",
     "assets/README/file-20251031160555170.png",
-    "assets/README/file-20251031173546140.png",
-    "assets/README",
     "scripts/zshrc-addons.md",
     "scripts/tab-complete.md",
     "scripts/obsidian_vaults().md",
@@ -275,11 +275,9 @@
     "template/share/jupyter/labextensions/@jupyter-notebook/lab-extension/schemas/@jupyter-notebook/lab-extension/package.json.orig",
     "template/share/jupyter/labextensions/@jupyter-notebook/lab-extension/schemas/@jupyter-notebook/lab-extension/interface-switcher.json",
     "template/share/jupyter/labextensions/@jupyter-notebook/lab-extension/schemas/@jupyter-notebook/lab-extension",
-    "template/share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/third-party-licenses.json",
     "template/lib/python3.12/site-packages/numpy/random/LICENSE.md",
     "template/lib/python3.12/site-packages/jupyter_server/i18n/README.md",
     "template/lib/python3.12/site-packages/nbconvert/templates/skeleton/README.md",
-    "template/lib/python3.12/site-packages/nbconvert/templates/README.md",
-    "template/lib/python3.12/site-packages/httpx-0.28.1.dist-info/licenses/LICENSE.md"
+    "template/lib/python3.12/site-packages/nbconvert/templates/README.md"
   ]
 }
