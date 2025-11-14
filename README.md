@@ -689,7 +689,7 @@ gitinitpub() {
 
 
 # obsidian
-See [https://github.com/ymeillier/043-obsidian-template/blob/main/Template.md](https://github.com/ymeillier/043-obsidian-template/blob/main/Template.md)
+See [https://github.com/ymeillier/00-obsidian-template/blob/main/Template.md](https://github.com/ymeillier/00-obsidian-template/blob/main/Template.md)
 
 
 
